@@ -95,7 +95,7 @@ public class FlutterUmplusPlugin implements MethodCallHandler {
     String name = (String)call.argument("name");
     Log.d("UM", "beginPageView: " + name);
     MobclickAgent.onPageStart(name);
-    MobclickAgent.onResume(activity);
+    //MobclickAgent.onResume(activity);
     result.success(null);
   }
 
@@ -103,7 +103,7 @@ public class FlutterUmplusPlugin implements MethodCallHandler {
     String name = (String)call.argument("name");
     Log.d("UM", "endPageView: " + name);
     MobclickAgent.onPageEnd(name);
-    MobclickAgent.onPause(activity);
+    //MobclickAgent.onPause(activity);
     result.success(null);
   }
 
